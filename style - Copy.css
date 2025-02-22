@@ -1,0 +1,33 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen layout */
+body {
+  display: flex;
+  flex-direction: column; /* Stack left and right sections vertically */
+  height: 100vh; /* Full viewport height */
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Left side (main content) */
+.left-side {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Right side (bottom section) */
+.right-side {
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter background */
+  border-top: 1px solid #333; /* Separator line */
+}
+
+/* Remove redundant styles */
+/* Add any additional styles below */
