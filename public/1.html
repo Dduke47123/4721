@@ -1,0 +1,32 @@
+ 
+   <script src="walletMain.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/socket.io@4.0.0/dist/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-react@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-wallets@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@solana/wallet-adapter-base@latest"></script>
+ 
+ 
+ <button id="connect-wallet-button">Connect Wallet</button>
+  <button id="edit-nickname-button" style="display: none;">Edit Nickname</button>
+  
+  <div id="nickname-form" style="display: none;">
+    <input type="text" id="nickname-input" placeholder="Enter new nickname">
+    <button id="nickname-submit-button">Submit</button>
+  </div>
+  
+  <div id="wallet-buttons" style="display: none;">
+    <button id="phantom-button">Phantom</button>
+    <button id="backpack-button">Backpack</button>
+    <button id="solflare-button">Solflare</button>
+    <button id="magiceden-button">Magic Eden</button>
+    <button id="coinbase-button">Coinbase</button>
+  </div>
+  
+  <div id="wallet-address"></div>
+  <div id="wallet-balance"></div>
+  <div id="all-tokens-display"></div>
+  <div id="transaction-result"></div>
+
+  <button id="get-balance-button">Get Balance</button>
+  <button id="get-all-tokens-button">Get All Tokens</button>	
